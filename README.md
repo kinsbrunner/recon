@@ -1,6 +1,4 @@
-# Untitled
-
-## Recon Toolbelt
+# Recon Toolbelt
 
 This repository contains a set of tools used for bug hunting:
 
