@@ -115,7 +115,7 @@ main(){
     echo "[==>] $(date +"%I:%M:%S") Scan completed in : $(($duration / 60)) minutes and $(($duration % 60)) seconds."
     stty sane
     tput sgr0
-  #  curl -s -X POST "https://api.telegram.org/bot${token_telegram}/sendMessage" -d chat_id="${chatid}" -d text="Vuln scan script has finished in $(($duration / 60)) minutes and $(($duration % 60)) seconds." >/dev/null 2>/dev/null
+    curl -s -X POST "https://api.telegram.org/bot${token_telegram}/sendMessage" -d chat_id="${chatid}" -d text="Vuln scan script has finished in $(($duration / 60)) minutes and $(($duration % 60)) seconds." >/dev/null 2>/dev/null
 }
 
 ######################################################
